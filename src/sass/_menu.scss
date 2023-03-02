@@ -11,14 +11,13 @@
   background-image: url("/public/img/menu-bg.png");
   background-repeat: no-repeat;
   background-size: 70%;
-  border: 1px solid white; // need to  clean
+  /*  border: 1px solid white; // need to  clean */
   background-position: right;
   &-links {
-    border: 1px solid white; // need to  clean
+    /*  border: 1px solid white; // need to  clean */
     width: 20%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     &-img {
       width: 25px;
@@ -29,7 +28,7 @@
   &-title {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     &-sname {
       @include RobotoMono-bold;
       font-size: 180px;
@@ -48,16 +47,23 @@
       color: #fff;
       margin: -120px 0 0 0;
     }
-    &-description {
+    &-description-left {
       @include RobotoMono-medium;
       font-size: 18px;
       text-align: left;
       color: #fff;
       margin: 100px 0 0 0;
     }
+    &-description-right {
+      @include RobotoMono-medium;
+      font-size: 16px;
+      text-align: right;
+      color: #fff;
+      margin: -24px 0 0 0;
+    }
   }
   &-lenguages {
-    width: 20%;
+    width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
