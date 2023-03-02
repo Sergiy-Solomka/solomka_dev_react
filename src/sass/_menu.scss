@@ -11,10 +11,8 @@
   background-image: url("/public/img/menu-bg.png");
   background-repeat: no-repeat;
   background-size: 70%;
-  /*  border: 1px solid white; // need to  clean */
   background-position: right;
   &-links {
-    /*  border: 1px solid white; // need to  clean */
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -77,15 +75,11 @@
       cursor: pointer;
     }
   }
-}
-.menu-code {
-  width: 85%;
-  height: 510px;
-  background-image: url("/public/img/menu-code.png");
-  background-repeat: no-repeat;
-  background-size: 380px;
-  background-position: right;
-  border: 1px solid green;
-}
-.menu-text {
+  &-menu-code {
+    position: relative;
+    width: 454px;
+    height: 524px;
+    bottom: 334px;
+    left: 416px;
+  }
 }
