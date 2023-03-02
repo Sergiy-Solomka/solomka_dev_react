@@ -15,7 +15,7 @@
   background-position: right;
   &-links {
     border: 1px solid white;
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     &-img {
@@ -25,16 +25,36 @@
   &-title {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    &-text {
-      font-size: 50px;
+    width: 60%;
+    &-sname {
+      @include RobotoMono-bold;
+      font-size: 180px;
+      letter-spacing: 7.5px;
+      text-align: left;
+      color: #ffffff31;
+      margin: 100px 0 0 0;
+    }
+    &-fname {
+      @include RobotoMono-medium;
+      width: 163px;
+      height: 34px;
+      font-size: 36px;
+      line-height: 0.67;
+      letter-spacing: 7.2px;
+      color: #fff;
+      margin: -120px 0 0 0;
     }
     &-description {
-      font-size: 20px;
+      @include RobotoMono-medium;
+      font-family: RobotoMono;
+      font-size: 18px;
+      text-align: left;
+      color: #fff;
+      margin: 100px 0 0 0;
     }
   }
   &-lenguages {
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     &-text {

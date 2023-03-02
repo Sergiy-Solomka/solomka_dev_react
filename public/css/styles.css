@@ -85,7 +85,7 @@
 }
 .menu-bg-links {
   border: 1px solid white;
-  width: 15%;
+  width: 20%;
   display: flex;
   flex-direction: column;
 }
@@ -95,16 +95,39 @@
 .menu-bg-title {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
 }
-.menu-bg-title-text {
-  font-size: 50px;
+.menu-bg-title-sname {
+  font-family: RobotoMono;
+  font-weight: 700;
+  font-size: 180px;
+  letter-spacing: 7.5px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.1921568627);
+  margin: 100px 0 0 0;
+}
+.menu-bg-title-fname {
+  font-family: RobotoMono;
+  font-weight: 500;
+  width: 163px;
+  height: 34px;
+  font-size: 36px;
+  line-height: 0.67;
+  letter-spacing: 7.2px;
+  color: #fff;
+  margin: -120px 0 0 0;
 }
 .menu-bg-title-description {
-  font-size: 20px;
+  font-family: RobotoMono;
+  font-weight: 500;
+  font-family: RobotoMono;
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  margin: 100px 0 0 0;
 }
 .menu-bg-lenguages {
-  width: 15%;
+  width: 20%;
   display: flex;
   flex-direction: column;
 }
