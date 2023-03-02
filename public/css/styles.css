@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "RobotoMono";
+  font-weight: 700;
+  src: url("/public/fonts/RobotoMono-Bold.ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-weight: 500;
+  src: url("/public/fonts/RobotoMono-Medium.ttf");
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  color: #fff;
+  align-items: center;
+}
+.header-logo {
+  width: 20%;
+}
+.header-logo-bg {
+  background-image: url("/public/img/header-logo-bg.png");
+  width: 140px;
+  height: 80px;
+}
+.header-logo-bg-first-splash {
+  font-family: RobotoMono;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 55px;
+}
+.header-logo-bg-first-letter {
+  font-family: RobotoMono;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 48px;
+}
+.header-logo-bg-second-letter {
+  font-family: RobotoMono;
+  font-weight: 700;
+  color: #1a191d;
+  font-size: 48px;
+}
+.header-logo-bg-second-splash {
+  font-family: RobotoMono;
+  font-weight: 700;
+  color: #1a191d;
+  font-size: 55px;
+}
+.header-home {
+  width: 30%;
+  cursor: pointer;
+}
+.header-menu {
+  width: 50%;
+}
+.header-menu-item {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  font-family: RobotoMono;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url("/public/img/Free-Stressed-linen-patterns.jpg");
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
