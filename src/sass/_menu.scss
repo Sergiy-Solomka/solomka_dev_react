@@ -4,12 +4,43 @@
   margin: 0;
 }
 .menu-bg {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 510px;
   background-image: url("/public/img/menu-bg.png");
   background-repeat: no-repeat;
   background-size: 70%;
+  border: 1px solid white;
   background-position: right;
+  &-links {
+    border: 1px solid white;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    &-img {
+      width: 25px;
+    }
+  }
+  &-title {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    &-text {
+      font-size: 50px;
+    }
+    &-description {
+      font-size: 20px;
+    }
+  }
+  &-lenguages {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    &-text {
+      font-size: 30px;
+    }
+  }
 }
 .menu-code {
   width: 85%;
@@ -18,6 +49,7 @@
   background-repeat: no-repeat;
   background-size: 380px;
   background-position: right;
+  border: 1px solid green;
 }
 .menu-text {
 }
