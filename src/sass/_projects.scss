@@ -7,127 +7,45 @@
   background-position: right;
   margin-top: -25px;
 }
-
-.block-one {
+.projects-block {
   display: flex;
   flex-direction: row;
-  &-project__one {
+  height: 350px;
+}
+.projects-block-title {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  &-name {
+    @include RobotoMono-light;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    margin: 200px 0 0 180px;
+  }
+  &-code {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 74px 25px;
+    &-pic {
+      width: 70%;
+      position: relative;
+      width: 454px;
+      height: 524px;
+      bottom: 80px;
+      left: 50px;
+    }
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &-project {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    &-img {
-      &-pic {
-        width: 70%;
-      }
-    }
-    &-title {
-      &-text {
-        @include RobotoMono-light;
-        font-size: 14px;
-        line-height: 1.71;
-        color: #fff;
-      }
-    }
-  }
-  &-project__two {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    &-img {
-      width: 50%;
-      &-pic {
-        width: 70%;
-      }
-    }
-  }
-}
-
-.block-two {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.block-three {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.block-two-first {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.block-two-project__one {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  &-img {
-    &-pic {
-      width: 70%;
-    }
-  }
-  &-title {
-    &-text {
-      @include RobotoMono-light;
-      font-size: 14px;
-      line-height: 1.71;
-      color: #fff;
-    }
-  }
-}
-.block-two-second {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.block-two-project__two {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  &-img {
-    &-pic {
-      width: 70%;
-    }
-  }
-  &-title {
-    &-text {
-      @include RobotoMono-light;
-      font-size: 14px;
-      line-height: 1.71;
-      color: #fff;
-    }
-  }
-}
-.block-two-project__three {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  &-img {
-    &-pic {
-      width: 70%;
-    }
-  }
-  &-title {
-    &-text {
-      @include RobotoMono-light;
-      font-size: 14px;
-      line-height: 1.71;
-      color: #fff;
-    }
-  }
-}
-.block-two-project__four {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  &-img {
-    &-pic {
-      width: 70%;
-    }
-  }
-  &-title {
     &-text {
       @include RobotoMono-light;
       font-size: 14px;
