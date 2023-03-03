@@ -252,8 +252,6 @@
 .block-two-project__one {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 74px 25px;
   text-align: center;
 }
 .block-two-project__one-img-pic {
@@ -276,8 +274,6 @@
 .block-two-project__two {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 74px 25px;
   text-align: center;
 }
 .block-two-project__two-img-pic {
@@ -294,8 +290,6 @@
 .block-two-project__three {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 74px 25px;
   text-align: center;
 }
 .block-two-project__three-img-pic {
@@ -312,8 +306,6 @@
 .block-two-project__four {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 74px 25px;
   text-align: center;
 }
 .block-two-project__four-img-pic {
