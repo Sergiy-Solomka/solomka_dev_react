@@ -241,11 +241,13 @@
 .block-two {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .block-three {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .block-two-first {
@@ -425,7 +427,7 @@
 }
 
 .cash-img {
-  background-image: url("/public/img/cash-counter.jpg");
+  background-image: url("/public/img/cash-counter.png");
 }
 
 html {

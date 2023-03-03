@@ -47,10 +47,12 @@
 .block-two {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .block-three {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .block-two-first {
   display: flex;
@@ -233,5 +235,5 @@
   background-image: url("/public/img/restaurant-bookings.solomka.dev_.png");
 }
 .cash-img {
-  background-image: url("/public/img/cash-counter.jpg");
+  background-image: url("/public/img/cash-counter.png");
 }
