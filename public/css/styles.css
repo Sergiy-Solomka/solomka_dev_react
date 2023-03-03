@@ -243,6 +243,11 @@
   flex-direction: row;
 }
 
+.block-three {
+  display: flex;
+  flex-direction: row;
+}
+
 .block-two-first {
   display: flex;
   flex-direction: column;
@@ -356,16 +361,6 @@
   filter: brightness(100%);
 }
 
-p {
-  color: #fff;
-  font-family: RobotoMono;
-  font-weight: 300;
-  text-align: center;
-  font-size: 0.8rem;
-  line-height: 150%;
-  letter-spacing: 2px;
-}
-
 .card-button-wrapper {
   margin-top: 10px;
 }
@@ -419,6 +414,18 @@ p {
 
 .store-img {
   background-image: url("/public/img/webstore-project.solomka.dev_.png");
+}
+
+.figma-img {
+  background-image: url("/public/img/figma-project.solomka.dev_.png");
+}
+
+.booking-img {
+  background-image: url("/public/img/restaurant-bookings.solomka.dev_.png");
+}
+
+.cash-img {
+  background-image: url("/public/img/cash-counter.jpg");
 }
 
 html {
