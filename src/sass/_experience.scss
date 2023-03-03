@@ -1,2 +1,29 @@
+.experience {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #27272776;
+  height: 300px;
+  margin-top: -4px;
 
-
+  &-block-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    &-name {
+      @include RobotoMono-light;
+      font-size: 24px;
+      line-height: 1;
+      color: #fff;
+      margin: 100px 0 0 180px;
+    }
+  }
+  &-work {
+    width: 50%;
+    @include RobotoMono-medium;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    margin: 30px 0;
+  }
+}

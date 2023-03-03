@@ -13,7 +13,7 @@
   background-size: 70%;
   background-position: right;
   &-links {
-    width: 20%;
+    width: 14%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,11 +26,11 @@
   &-title {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 76%;
     &-sname {
       @include RobotoMono-bold;
       font-size: 180px;
-      letter-spacing: 7.5px;
+      letter-spacing: 15.5px;
       text-align: left;
       color: #ffffff31;
       margin: 100px 0 0 0;

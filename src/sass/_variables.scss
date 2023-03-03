@@ -8,6 +8,11 @@
   font-weight: 500;
   src: url("/public/fonts/RobotoMono-Medium.ttf");
 }
+@font-face {
+  font-family: "RobotoMono";
+  font-weight: 500;
+  src: url("/public/fonts/RobotoMono-Light.ttf");
+}
 
 @mixin RobotoMono-bold {
   font-family: RobotoMono;
@@ -17,4 +22,8 @@
 @mixin RobotoMono-medium {
   font-family: RobotoMono;
   font-weight: 500;
+}
+@mixin RobotoMono-light {
+  font-family: RobotoMono;
+  font-weight: 300;
 }
