@@ -3,7 +3,7 @@
   flex-direction: row;
   width: 100%;
   background-color: #27272779;
-  height: 250px;
+  height: 460px;
   margin-top: -4px;
 
   &-block-title {
@@ -15,11 +15,15 @@
       font-size: 24px;
       line-height: 1;
       color: #fff;
-      margin: 100px 0 0 180px;
+      margin: 200px 0 0 180px;
     }
   }
-  &-work {
+  &-block-work {
+    display: flex;
+    flex-direction: column;
     width: 50%;
+  }
+  &-work {
     @include RobotoMono-medium;
     font-size: 16px;
     text-align: left;

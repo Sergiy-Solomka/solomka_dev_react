@@ -169,7 +169,7 @@
   flex-direction: row;
   width: 100%;
   background-color: rgba(39, 39, 39, 0.4745098039);
-  height: 250px;
+  height: 460px;
   margin-top: -4px;
 }
 .experience-block-title {
@@ -183,10 +183,14 @@
   font-size: 24px;
   line-height: 1;
   color: #fff;
-  margin: 100px 0 0 180px;
+  margin: 200px 0 0 180px;
+}
+.experience-block-work {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 .experience-work {
-  width: 50%;
   font-family: RobotoMono;
   font-weight: 500;
   font-size: 16px;
