@@ -396,8 +396,8 @@
   align-content: center;
 }
 .technologies-skills-img {
-  width: 6vw;
-  height: 6vw;
+  width: 5vw;
+  height: 5vw;
   margin: 20px;
   cursor: pointer;
 }
@@ -414,11 +414,11 @@
 }
 .certificacions-bg {
   width: 100%;
-  height: 36%;
+  height: 37%;
   background-image: url("/public/img/menu-code-reverse.png");
   background-repeat: no-repeat;
-  background-size: 56%;
-  background-position: left;
+  background-size: 50%;
+  background-position: inherit;
   position: relative;
 }
 .certificacions-bg-plant {
