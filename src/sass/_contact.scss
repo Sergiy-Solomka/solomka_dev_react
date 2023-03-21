@@ -1,2 +1,26 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  margin-top: 14vw;
+  align-items: center;
+  &-title {
+    width: 50%;
 
-
+    &-text {
+      @include RobotoMono-light;
+      font-size: 24px;
+      line-height: 1;
+      color: #fff;
+      margin-left: 180px;
+    }
+  }
+  &-links {
+    width: 50%;
+    &-img {
+      width: 25px;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+}
