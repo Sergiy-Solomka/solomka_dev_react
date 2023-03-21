@@ -76,7 +76,7 @@
   width: 100%;
   height: auto;
   margin: 0;
-  width: 100%;
+  width: 99%;
   height: 510px;
   background-image: url("/public/img/menu-bg.png");
   background-repeat: no-repeat;
@@ -402,6 +402,47 @@
   cursor: pointer;
 }
 
+.certificacions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 2000px;
+  background-image: url("/public/img/block-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: inherit;
+}
+.certificacions-pics {
+  position: relative;
+}
+.certificacions-pics-js {
+  width: 400px;
+  position: absolute;
+  left: 57vw;
+  top: 17vw;
+  z-index: 1;
+}
+.certificacions-pics-plant {
+  width: 180px;
+  position: absolute;
+  left: 42vw;
+  z-index: 1;
+  top: 25vw;
+}
+.certificacions-pics-web {
+  width: 260px;
+  position: absolute;
+  left: 17vw;
+  top: 20vw;
+  z-index: 1;
+}
+.certificacions-pics-react {
+  width: 470px;
+  position: absolute;
+  left: 32vw;
+  top: 5vw;
+}
+
 html {
   height: 100%;
   margin: 0;
@@ -425,7 +466,7 @@ a:active {
 
 .container {
   width: 96%;
-  height: 3000px;
+  height: 4000px;
   margin: 0 auto;
 }
 

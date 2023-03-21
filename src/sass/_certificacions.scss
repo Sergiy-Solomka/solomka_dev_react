@@ -1,2 +1,43 @@
+.certificacions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 2000px;
+  background-image: url("/public/img/block-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: inherit;
+  &-bg {
+  }
+  &-pics {
+    position: relative;
 
-
+    &-js {
+      width: 400px;
+      position: absolute;
+      left: 57vw;
+      top: 17vw;
+      z-index: 1;
+    }
+    &-plant {
+      width: 180px;
+      position: absolute;
+      left: 42vw;
+      z-index: 1;
+      top: 25vw;
+    }
+    &-web {
+      width: 260px;
+      position: absolute;
+      left: 17vw;
+      top: 20vw;
+      z-index: 1;
+    }
+    &-react {
+      width: 470px;
+      position: absolute;
+      left: 32vw;
+      top: 5vw;
+    }
+  }
+}
