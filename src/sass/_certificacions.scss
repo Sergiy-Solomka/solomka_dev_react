@@ -1,6 +1,6 @@
 .certificacions {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: 2000px;
   background-image: url("/public/img/block-bg.png");
@@ -8,9 +8,32 @@
   background-size: 100%;
   background-position: inherit;
   &-bg {
+    width: 100%;
+    height: 36%;
+    background-image: url("/public/img/menu-code-reverse.png");
+    background-repeat: no-repeat;
+    background-size: 56%;
+    background-position: left;
+    position: relative;
+    &-plant {
+      width: 180px;
+      position: absolute;
+      left: 34vw;
+      top: 0;
+    }
   }
+
   &-pics {
     position: relative;
+    width: 100%;
+    height: 470px;
+    &-title {
+      @include RobotoMono-light;
+      font-size: 24px;
+      line-height: 1;
+      color: #fff;
+      margin: 200px 0 0 180px;
+    }
 
     &-js {
       width: 400px;
@@ -22,7 +45,7 @@
     &-plant {
       width: 180px;
       position: absolute;
-      left: 42vw;
+      left: 34vw;
       z-index: 1;
       top: 25vw;
     }
