@@ -21,6 +21,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    flex-direction: row;
+    align-content: center;
 
     &-img {
       width: 100px;
