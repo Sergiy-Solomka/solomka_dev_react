@@ -162,13 +162,6 @@
   padding: 10px 10px;
   cursor: pointer;
 }
-.menu-bg-menu-code {
-  position: relative;
-  width: 454px;
-  height: 524px;
-  bottom: 334px;
-  left: 500px;
-}
 
 .experience {
   display: flex;
@@ -219,6 +212,11 @@
   display: flex;
   flex-direction: row;
   height: 250px;
+  background-image: url("/public/img/menu-code-reverse.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: inherit;
+  margin-top: -25px;
 }
 
 .projects-head-title {
@@ -234,19 +232,6 @@
   color: #fff;
   margin: 140px 0 0 180px;
 }
-.projects-head-title-code {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.projects-head-title-code-pic {
-  width: 70%;
-  position: relative;
-  width: 454px;
-  height: 524px;
-  bottom: 80px;
-  left: 50px;
-}
 
 .block {
   display: flex;
@@ -255,7 +240,7 @@
   justify-content: center;
   width: 100%;
   height: 1600px;
-  background-image: url(/public/img/block-bg.png);
+  background-image: url("/public/img/block-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
