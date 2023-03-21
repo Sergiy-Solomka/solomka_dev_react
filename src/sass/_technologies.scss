@@ -2,6 +2,30 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #827e7efc;
+  background-color: #27272779;
   height: 460px;
+  margin: 100px auto;
+  &-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    &-name {
+      @include RobotoMono-light;
+      font-size: 24px;
+      line-height: 1;
+      color: #fff;
+      margin: 200px 0 0 180px;
+    }
+  }
+  &-skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    &-img {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+    }
+  }
 }
