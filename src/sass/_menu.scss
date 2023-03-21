@@ -2,16 +2,22 @@
   width: 100%;
   height: auto;
   margin: 0;
-}
-.menu-bg {
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: 510px;
   background-image: url("/public/img/menu-bg.png");
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: right;
+}
+.menu-bg {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 510px;
+  background-image: url("/public/img/menu-code.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: inherit;
   &-links {
     width: 14%;
     display: flex;
