@@ -3,39 +3,53 @@
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: right;
-  margin-top: -25px;
-}
-.projects-head {
-  display: flex;
-  flex-direction: row;
-  height: 250px;
-  background-image: url("/public/img/menu-code-reverse.png");
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: inherit;
-  margin-top: -25px;
-}
-.projects-head-bg {
-  display: flex;
-  flex-direction: row;
-  height: 500px;
-  width: 100%;
-  background-image: url("/public/img/projects-bg.png");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: inherit;
-  margin-top: 26px;
-}
-.projects-head-title {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  &-name {
-    @include RobotoMono-light;
-    font-size: 24px;
-    line-height: 1;
-    color: #fff;
-    margin: 140px 0 0 180px;
+  margin-top: -140px;
+
+  &-head {
+    // display: flex;
+    // flex-direction: row;
+    //height: 270px;
+    background-image: url("/public/img/menu-code-reverse.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: inherit;
+    margin-top: 140px;
+
+    &-bg {
+      //display: flex;
+      /* flex-direction: row; */
+      height: 400px;
+      /* width: 100%; */
+      background-image: url("/public/img/projects-bg.png");
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: inherit;
+      /* margin-top: 26px;*/
+      @media (max-width: $middle) {
+        height: 270px;
+        background-size: 110%;
+      }
+    }
+    &-title {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      @media (max-width: $middle) {
+        justify-content: center;
+        width: 100%;
+      }
+      &-text {
+        @include RobotoMono-light;
+        font-size: 24px;
+        line-height: 1;
+        color: #fff;
+        margin: 200px 0 0 180px;
+        @media (max-width: $middle) {
+          text-align: center;
+          margin: 100px 0 0 0px;
+        }
+      }
+    }
   }
 }
 
@@ -91,10 +105,9 @@
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.255);
   filter: brightness(70%);
-}
-
-.card-banner-image:hover {
-  filter: brightness(100%);
+  &:hover {
+    filter: brightness(100%);
+  }
 }
 
 .card-button-wrapper {
