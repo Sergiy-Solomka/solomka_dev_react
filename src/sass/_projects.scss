@@ -6,9 +6,6 @@
   margin-top: -140px;
 
   &-head {
-    // display: flex;
-    // flex-direction: row;
-    //height: 270px;
     background-image: url("/public/img/menu-code-reverse.png");
     background-repeat: no-repeat;
     background-size: 50%;
@@ -16,15 +13,11 @@
     margin-top: 140px;
 
     &-bg {
-      //display: flex;
-      /* flex-direction: row; */
       height: 400px;
-      /* width: 100%; */
       background-image: url("/public/img/projects-bg.png");
       background-repeat: no-repeat;
       background-size: 70%;
       background-position: inherit;
-      /* margin-top: 26px;*/
       @media (max-width: $middle) {
         height: 270px;
         background-size: 110%;
@@ -90,6 +83,14 @@
   width: 400px;
   height: 450px;
   margin: 25px 25px;
+  @media (max-width: $middle) {
+    width: 350px;
+    height: 450px;
+  }
+  @media (max-width: $small) {
+    width: 280px;
+    height: 450px;
+  }
 }
 
 .card-wrapper {
