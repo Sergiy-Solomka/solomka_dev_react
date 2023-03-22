@@ -4,8 +4,10 @@
   height: 80px;
   color: #fff;
   align-items: center;
+  margin-top: 20px;
   &-logo {
     width: 14%;
+    display: contents;
     &-bg {
       background-color: #c99b89;
       width: 140px;
@@ -34,16 +36,12 @@
     }
   }
 
-  &-home {
-    width: 10%;
-    cursor: pointer;
-  }
   &-menu {
     width: 76%;
     text-align: end;
   }
   &-menu-item {
-    margin: 0 20px;
+    margin: 10px 20px;
     cursor: pointer;
   }
 }
