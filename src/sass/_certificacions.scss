@@ -61,7 +61,11 @@
       }
       @media (max-width: $middle) {
         left: 22vw;
-        top: 38vw;
+        top: 44vw;
+      }
+      @media (max-width: $m-s) {
+        left: 16vw;
+        top: 46vw;
       }
       @media (max-width: $small) {
         left: 14vw;
@@ -105,6 +109,10 @@
         left: 32vw;
         top: 12vw;
       }
+      @media (max-width: $m-s) {
+        left: 28vw;
+        top: 12vw;
+      }
       @media (max-width: $small) {
         left: 26vw;
         top: 26vw;
@@ -131,7 +139,12 @@
       }
       @media (max-width: $middle) {
         left: 18vw;
-        top: 70vw;
+        top: 82vw;
+      }
+      @media (max-width: $m-s) {
+        left: 14vw;
+        top: 88vw;
+        width: 430px;
       }
       @media (max-width: $small) {
         left: 10vw;
