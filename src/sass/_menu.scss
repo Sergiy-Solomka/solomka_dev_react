@@ -21,6 +21,9 @@
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: inherit;
+  @media (max-width: $small) {
+    margin-top: 30px;
+  }
   &-links {
     width: 14%;
     display: flex;
@@ -42,7 +45,7 @@
     @media (max-width: $small) {
       width: 60%;
       align-items: center;
-      margin-top: -110px;
+      margin-top: -30px;
     }
     &-sname {
       @include RobotoMono-bold;

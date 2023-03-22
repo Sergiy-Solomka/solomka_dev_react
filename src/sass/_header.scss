@@ -39,6 +39,11 @@
   &-menu {
     width: 76%;
     text-align: end;
+    @media (max-width: $small) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 85px;
+    }
   }
   &-menu-item {
     margin: 10px 20px;
