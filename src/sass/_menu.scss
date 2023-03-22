@@ -8,6 +8,9 @@
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: right;
+  @media (max-width: $small) {
+    padding-top: 80px;
+  }
 }
 .menu-bg {
   display: flex;
@@ -23,6 +26,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: $small) {
+      width: 20%;
+    }
     &-img {
       width: 25px;
       padding: 15px;
@@ -33,9 +39,14 @@
     display: flex;
     flex-direction: column;
     width: 76%;
+    @media (max-width: $small) {
+      width: 60%;
+      align-items: center;
+      margin-top: -110px;
+    }
     &-sname {
       @include RobotoMono-bold;
-      font-size: 17vw;
+      font-size: 13vw;
       letter-spacing: 15.5px;
       text-align: left;
       color: #ffffff31;
@@ -57,6 +68,10 @@
       text-align: left;
       color: #fff;
       margin: 100px 0 0 0;
+      @media (max-width: $small) {
+        font-size: 15px;
+        text-align: center;
+      }
     }
     &-description-right {
       @include RobotoMono-medium;
@@ -71,6 +86,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: $small) {
+      width: 20%;
+    }
     &-text {
       @include RobotoMono-medium;
       font-size: 14px;
