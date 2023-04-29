@@ -1,3 +1,6 @@
 
 node_modules
-public/css
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/solomka.dev-layout.iml
+/.idea/vcs.xml
