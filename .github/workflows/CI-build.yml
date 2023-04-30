@@ -11,5 +11,3 @@ jobs:
         run: cd frontend && npm install
       - name: Run SASS to generate CSS
         run: cd frontend && npm run sass-build
-#      - name: Build the Docker image
-#        run: docker build . --file Dockerfile --tag html_solomka_dev:$(date +%s)
