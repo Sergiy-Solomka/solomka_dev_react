@@ -20,7 +20,7 @@ jobs:
             whoami
             ls -al
       - name: copy file via ssh key
-        uses: appleboy/scp-action@v0.1.4
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
