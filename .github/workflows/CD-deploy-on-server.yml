@@ -29,5 +29,5 @@ jobs:
 #      - name: Add Port to Known Hosts
 #        run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
       - name: Deploy with rsync
-        run: rsync -avz . :/home/sergio/DOCKER_FILES/
+        run: rsync -avz . sergio@85.209.75.243 -p 2222 :/home/sergio/DOCKER_FILES/
 
