@@ -19,3 +19,12 @@ jobs:
           script: |
             whoami
             ls -al
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          source: " . "
+          target: /home/sergio/DOCKER_FILES/test
