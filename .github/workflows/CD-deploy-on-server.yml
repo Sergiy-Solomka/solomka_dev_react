@@ -19,9 +19,3 @@ jobs:
           script: |
             whoami
             ls -al
-            rsync -avz . :/home/sergio/DOCKER_FILES/
-
-
-
-#        run: rsync -avz . sergio@85.209.75.243 -p 2222 :/home/sergio/DOCKER_FILES/
-
