@@ -1,4 +1,4 @@
-name: CI
+name: CI-build
 on: [push, pull_request]
 jobs:
   build:
@@ -11,5 +11,5 @@ jobs:
         run: cd frontend && npm install
       - name: Run SASS to generate CSS
         run: cd frontend && npm run sass-build
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag html_solomka_dev:$(date +%s)
+#      - name: Build the Docker image
+#        run: docker build . --file Dockerfile --tag html_solomka_dev:$(date +%s)
