@@ -19,7 +19,7 @@ jobs:
           script: |
             whoami
             ls -al
-            git@github.com:Sergiy-Solomka/solomka.dev-layout.git "/home/sergio/DOCKER_FILES/test"
+            https://github.com/Sergiy-Solomka/solomka.dev-layout "/home/sergio/DOCKER_FILES/test"
 
 #FTP-Deploy-Action:
 #  name: FTP-Deploy-Action
