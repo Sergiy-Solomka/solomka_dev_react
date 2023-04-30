@@ -31,5 +31,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: html_solomka_dev:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/html_solomka_dev:latest
           labels: ${{ steps.meta.outputs.labels }}
