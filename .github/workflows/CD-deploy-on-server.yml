@@ -19,6 +19,7 @@ jobs:
           script: |
             whoami
             ls -al
+            rsync -avz . :/home/sergio/DOCKER_FILES/
 
 
 
