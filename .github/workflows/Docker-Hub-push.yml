@@ -1,8 +1,8 @@
-name: Build and Publish Docker image
+name: CD to DockerHub
 
 on:
   workflow_run:
-    workflows: ["CI-TESTS"]
+    workflows: ["CI-test"]
     types:
       - completed
 

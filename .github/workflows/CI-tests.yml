@@ -1,4 +1,4 @@
-name: CI-TESTS
+name: CI TESTS
 on:
   push:
     branches: [ master ]
