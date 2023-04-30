@@ -17,6 +17,9 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           script: whoami
+      - name: Deploy with rsync
+        run: rsync -avz . ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }}:/home/sergio/DOCKER_FILES/
+
 #      - name: Install SSH Key
 #        uses: shimataro/ssh-key-action@v2
 #        with:
