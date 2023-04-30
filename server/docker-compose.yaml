@@ -1,0 +1,37 @@
+version: "3"
+services:
+  html_solomka_dev:
+    image: "html_solomka_dev"
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-proxy"
+      # Get the routes from http
+      - "traefik.http.routers.html_solomka_dev.rule=Host(`solomka.dev`)"
+      - "traefik.http.routers.html_solomka_dev.entrypoints=http"
+      # Redirect these routes to https
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.html_solomka_dev.middlewares=redirect-to-https@docker"
+      # Get the routes from https
+      - "traefik.http.routers.html_solomka_dev-secured.rule=Host(`solomka.dev`)"
+      - "traefik.http.routers.html_solomka_dev-secured.entrypoints=https"
+      # Apply authentication with http challenge
+      - "traefik.http.routers.html_solomka_dev-secured.tls=true"
+      - "traefik.http.routers.html_solomka_dev-secured.tls.certresolver=letsEncrypt"
+      # Get the routes from https for www.solomka.dev
+      - "traefik.http.routers.html_solomka_dev-www.rule=Host(`www.solomka.dev`)"
+      - "traefik.http.routers.html_solomka_dev-www.entrypoints=https"
+      # Apply authentication with http challenge
+      - "traefik.http.routers.html_solomka_dev-www.tls=true"
+      - "traefik.http.routers.html_solomka_dev-www.tls.certresolver=letsEncrypt"
+      # Add middleware to redirect from HTTP to HTTPS
+      - "traefik.http.routers.html_solomka_dev-www.middlewares=redirect-to-https@docker"
+    ports:
+      - "5005:80"
+    networks:
+      - default
+      - traefik-proxy
+
+networks:
+  traefik-proxy:
+    external: true
