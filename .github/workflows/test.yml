@@ -4,12 +4,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
       - name: Install server modules
         run: cd server && npm install
       - name: Install frontend modules
         run: cd frontend && npm install
       - name: Run SASS to generate CSS
         run: cd frontend && npm run sass-build
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag html_solomka_dev:$(date +%s)
+#      - name: Build the Docker image
+#        run: docker build . --file Dockerfile --tag html_solomka_dev:$(date +%s)
