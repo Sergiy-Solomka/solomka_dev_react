@@ -1,12 +1,18 @@
-FROM node:latest
+# Base image
+FROM node:14-alpine
 
+# Set working directory
 WORKDIR /app
 
-COPY server/package*.json ./
+# Copy both frontend and server folders
+COPY frontend/ ./frontend/
+COPY server/ ./server/
 
-RUN npm install
+# Install dependencies
+RUN npm install --prefix ./server
 
-COPY server .
-
+# Expose port 80
 EXPOSE 80
-CMD [ "node", "server.js" ]
+
+# Start the server
+CMD ["node", "server/server.js"]
