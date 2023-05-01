@@ -12,7 +12,7 @@ const HOST = process.env.HOST || "0.0.0.0";
 const app = express();
 app.use(express.static(__dirname + '/../frontend'));
 app.get('/', function(req, res) {
-  res.sendFile(join(__dirname, '/../frontend/index.html'));
+  res.sendFile(join(__dirname, '/index.html'));
 });
 
 
