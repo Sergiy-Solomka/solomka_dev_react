@@ -23,5 +23,6 @@ jobs:
             cd ..
             rm -rf html-solomka.dev
             git clone https://github.com/Sergiy-Solomka/solomka.dev-layout.git /home/sergio/DOCKER_FILES/html-solomka.dev
+            cd /home/sergio/DOCKER_FILES/html-solomka.dev
             echo Sergio | sudo -S docker build -t html_solomka_dev .
             echo Sergio | sudo -S docker compose up -d
