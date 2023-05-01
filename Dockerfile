@@ -10,6 +10,7 @@ COPY server/ ./server/
 
 # Install dependencies
 RUN npm install --prefix ./server
+RUN npm run sass-build --prefix ./frontend
 
 # Expose port 80
 EXPOSE 80
