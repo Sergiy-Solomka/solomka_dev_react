@@ -19,8 +19,11 @@ jobs:
           script: |
             whoami
             ls -al
-            https://github.com/Sergiy-Solomka/solomka.dev-layout "/home/sergio/DOCKER_FILES/test"
-
+            cd /home/sergio/DOCKER_FILES/test
+#            docker compose down
+            cd ..
+            rm -rf test
+            git clone https://github.com/Sergiy-Solomka/solomka.dev-layout.git /home/sergio/DOCKER_FILES/test
 #FTP-Deploy-Action:
 #  name: FTP-Deploy-Action
 #  runs-on: ubuntu-latest
