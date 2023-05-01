@@ -20,32 +20,8 @@ jobs:
             whoami
             ls -al
             cd /home/sergio/DOCKER_FILES/test
-#            docker compose down
             cd ..
             rm -rf test
             git clone https://github.com/Sergiy-Solomka/solomka.dev-layout.git /home/sergio/DOCKER_FILES/test
-            docker build -t html_solomka_dev .
-            docker run -it -d -p 5006:80 html_solomka_dev
-#FTP-Deploy-Action:
-#  name: FTP-Deploy-Action
-#  runs-on: ubuntu-latest
-#  steps:
-#    - uses: actions/checkout@v2.1.0
-#      with:
-#        fetch-depth: 2
-#    - name: FTP-Deploy-Action
-#      uses: SamKirkland/FTP-Deploy-Action@3.1.1
-#      with:
-#        ftp-server: ftp://ftp.example.com:21/public_html
-#        ftp-username: userna5
-#        ftp-password: ${{ secrets.FTP_PASSWORD }}
-
-#      - name: copy file via ssh key
-#        uses: appleboy/scp-action@v0.1.4
-#        with:
-#          host: ${{ secrets.SSH_HOST }}
-#          username: ${{ secrets.SSH_USER }}
-#          password: ${{ secrets.SSH_PASSWORD }}
-#          port: ${{ secrets.SSH_PORT }}
-#          source: "docker-compose.yaml"
-#          target: "/home/sergio/DOCKER_FILES/test"
+            sudo docker build -t html_solomka_dev .
+            sudo docker run -it -d -p 5006:80 html_solomka_dev
