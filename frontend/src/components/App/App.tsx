@@ -6,7 +6,7 @@ import Experience from '../Experience/Experience'
 import Projects from '../Projects/Projects'
 import Technologies from '../Technologies/Technologies'
 import Certifications from '../Certifications/Certifications'
-import ContactMe from '../ContactMe/ContactMe'
+// import ContactMe from '../ContactMe/ContactMe'
 import Footer from '../Footer/Footer'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Projects />
       <Technologies />
       <Certifications />
-      <ContactMe />
+      {/*<ContactMe />*/}
       <Footer />
     </div>
   )
