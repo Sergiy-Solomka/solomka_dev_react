@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  color: #fff;
+  align-items: center;
+  margin-top: 20px;
+  &-logo {
+    width: 14%;
+    display: contents;
+    &-bg {
+      background-color: #c99b89;
+      width: 140px;
+      height: 80px;
+      &-first-splash {
+        @include RobotoMono-bold;
+        color: #ffffff;
+        font-size: 55px;
+      }
+      &-first-letter {
+        @include RobotoMono-bold;
+        color: #ffffff;
+        font-size: 48px;
+      }
+
+      &-second-letter {
+        @include RobotoMono-bold;
+        color: #1a191d;
+        font-size: 48px;
+      }
+      &-second-splash {
+        @include RobotoMono-bold;
+        color: #1a191d;
+        font-size: 55px;
+      }
+    }
+  }
+
+  &-menu {
+    width: 76%;
+    text-align: end;
+    @media (max-width: $small) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 85px;
+    }
+  }
+  &-menu-item {
+    margin: 10px 20px;
+    cursor: pointer;
+  }
+}
+
+.menu-btn {
+  @include RobotoMono-medium;
+  color: #ffffff;
+  font-size: 14px;
+}
