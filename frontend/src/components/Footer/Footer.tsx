@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer className='footer'>
         <a href='/#'>
-          <p className='footer-text'>&copy https://solomka.dev 2023</p>
+          <p className='footer-text'>https://www.solomka.dev 2023</p>
         </a>
       </footer>
     </div>

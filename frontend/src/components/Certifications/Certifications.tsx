@@ -11,6 +11,7 @@ import github from '../../img/github.png'
 import telegram from '../../img/telegram.png'
 import watsapp from '../../img/watsapp.png'
 import email from '../../img/email.png'
+import curriculum from '../../img/curriculum-vitae-y-cv.png'
 
 const Certifications = () => {
   return (
@@ -30,6 +31,13 @@ const Certifications = () => {
               <p className='contact-title-text'>Contact Me...</p>
             </div>
             <div className='contact-links'>
+              <a
+                href='https://www.dropbox.com/s/o9vyh3117a2y05c/Junior-React-CV-EN.pdf?dl=1'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img className='menu-bg-links-img' src={curriculum} alt='cv' />
+              </a>
               <a
                 href='https://www.linkedin.com/in/sergiy-solomka/'
                 target='_blank'
