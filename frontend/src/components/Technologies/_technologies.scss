@@ -1,0 +1,49 @@
+.technologies {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #27272779;
+  height: 430px;
+  @media (max-width: $middle) {
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    &-name {
+      @include RobotoMono-light;
+      font-size: 24px;
+      line-height: 1;
+      color: #fff;
+      margin: 156px 0 0 180px;
+      @media (max-width: $middle) {
+        margin: 50px;
+      }
+    }
+  }
+  &-skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: row;
+    align-content: center;
+    @media (max-width: $middle) {
+      width: 100%;
+      justify-content: center;
+    }
+
+    &-img {
+      width: 5vw;
+      height: 5vw;
+      margin: 20px;
+      cursor: pointer;
+      @media (max-width: $middle) {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+  }
+}
