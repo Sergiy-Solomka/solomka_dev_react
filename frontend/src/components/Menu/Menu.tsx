@@ -10,7 +10,7 @@ import curriculum from '../../img/curriculum-vitae-y-cv.png'
 const Menu = () => {
   return (
     <div>
-      <nav className='menu'>
+      <nav className='menu' id='home'>
         <div className='menu-bg'>
           <div className='menu-bg-links'>
             <a

@@ -16,7 +16,7 @@ import curriculum from '../../img/curriculum-vitae-y-cv.png'
 const Certifications = () => {
   return (
     <div>
-      <main className='certificacions' id='certificacions'>
+      <main className='certificacions' id='certifications'>
         <div className='certificacions-pics'>
           <p className='certificacions-pics-title'>Certificacions...</p>
           <img alt='' className='certificacions-pics-web' src={cer_tweb} />

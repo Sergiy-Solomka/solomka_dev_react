@@ -6,7 +6,24 @@
   height: 80px;
   color: #fff;
   align-items: center;
-  margin-top: 20px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  background-color: #1a191d;
+  opacity: 0.9;
+  overflow: hidden;
+  animation: moveDown 0.5s ease-in-out;
+  @keyframes moveDown {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0rem);
+    }
+  }
+
+
   &-logo {
     width: 14%;
     display: contents;
@@ -42,9 +59,11 @@
     width: 76%;
     text-align: end;
     @media (max-width: $small) {
-      display: flex;
-      flex-direction: column;
-      margin-top: 85px;
+      //display: flex;
+      //flex-direction: column;
+      //margin-top: 85px;
+      //flex-wrap: nowrap;
+      //text-align: left;
     }
   }
   &-menu-item {
