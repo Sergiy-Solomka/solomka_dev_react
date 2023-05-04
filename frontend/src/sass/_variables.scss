@@ -10,18 +10,19 @@ $xxl: 1440px;
 @font-face {
   font-family: "RobotoMono";
   font-weight: 700;
-  src: url("/public/fonts/RobotoMono-Bold.ttf");
+  src: url("../fonts/RobotoMono-Bold.ttf");
 }
 @font-face {
   font-family: "RobotoMono";
   font-weight: 500;
-  src: url("/public/fonts/RobotoMono-Medium.ttf");
+  src: url("../fonts/RobotoMono-Medium.ttf");
 }
 @font-face {
   font-family: "RobotoMono";
   font-weight: 500;
-  src: url("/public/fonts/RobotoMono-Light.ttf");
+  src: url("../fonts/RobotoMono-Light.ttf");
 }
+
 
 @mixin RobotoMono-bold {
   font-family: RobotoMono;
