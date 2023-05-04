@@ -1,3 +1,4 @@
+@import '../../sass/_variables';
 .projects {
   width: 100%;
   background-repeat: no-repeat;
@@ -6,7 +7,7 @@
   margin-top: -140px;
 
   &-head {
-    background-image: url("/public/img/menu-code-reverse.png");
+    background-image: url("../../img/menu-code-reverse.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: inherit;
@@ -14,7 +15,7 @@
 
     &-bg {
       height: 400px;
-      background-image: url("/public/img/projects-bg.png");
+      background-image: url("../../img/projects-bg.png");
       background-repeat: no-repeat;
       background-size: 70%;
       background-position: inherit;
@@ -52,7 +53,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  background-image: url("/public/img/block-bg.png");
+  background-image: url("../../img/block-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -159,17 +160,17 @@
 }
 
 .react-img {
-  background-image: url("/public/img/react-example-page.solomka.dev_.png");
+  background-image: url("../../img/react-example-page.solomka.dev_.png");
 }
 .store-img {
-  background-image: url("/public/img/webstore-project.solomka.dev_.png");
+  background-image: url("../../img/webstore-project.solomka.dev_.png");
 }
 .figma-img {
-  background-image: url("/public/img/figma-project.solomka.dev_.png");
+  background-image: url("../../img/figma-project.solomka.dev_.png");
 }
 .booking-img {
-  background-image: url("/public/img/restaurant-bookings.solomka.dev_.png");
+  background-image: url("../../img/restaurant-bookings.solomka.dev_.png");
 }
 .cash-img {
-  background-image: url("/public/img/cash-counter.png");
+  background-image: url("../../img/cash-counter.png");
 }
