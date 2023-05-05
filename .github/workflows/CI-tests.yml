@@ -13,5 +13,3 @@ jobs:
         run: cd server && npm install
       - name: Install frontend modules
         run: cd frontend && npm install
-      - name: Run SASS to generate CSS
-        run: cd frontend && npm run sass-build
