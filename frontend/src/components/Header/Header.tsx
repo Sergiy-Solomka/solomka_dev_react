@@ -29,91 +29,97 @@ const Header: React.FC = () => {
           </div>
         </div>
         <div className='header-menu'>
-          <span className='header-menu-item menu-btn'>
-            <a
-              href='/#'
-              onClick={(event) => {
-                event.preventDefault()
-                const element = document.getElementById('home')
-                if (element) {
-                  window.scrollTo({
-                    top: element.offsetTop - 80,
-                    behavior: 'smooth',
-                  })
-                }
-              }}
-            >
-              Home &gt;
-            </a>
-          </span>
-          <span className='header-menu-item menu-btn'>
-            <a
-              href='/#'
-              onClick={(event) => {
-                event.preventDefault()
-                const element = document.getElementById('experience')
-                if (element) {
-                  window.scrollTo({
-                    top: element.offsetTop - 80,
-                    behavior: 'smooth',
-                  })
-                }
-              }}
-            >
-              Experience &gt;{' '}
-            </a>
-          </span>
-          <span className='header-menu-item menu-btn'>
-            <a
-              href='/#'
-              onClick={(event) => {
-                event.preventDefault()
-                const element = document.getElementById('projects')
-                if (element) {
-                  window.scrollTo({
-                    top: element.offsetTop - 80,
-                    behavior: 'smooth',
-                  })
-                }
-              }}
-            >
-              My projects &gt;
-            </a>
-          </span>
-          <span className='header-menu-item menu-btn'>
-            <a
-              href='/#'
-              onClick={(event) => {
-                event.preventDefault()
-                const element = document.getElementById('technologies')
-                if (element) {
-                  window.scrollTo({
-                    top: element.offsetTop - 80,
-                    behavior: 'smooth',
-                  })
-                }
-              }}
-            >
-              Technologies &gt;
-            </a>
-          </span>
-          <span className='header-menu-item menu-btn'>
-            <a
-              href='/#'
-              onClick={(event) => {
-                event.preventDefault()
-                const element = document.getElementById('certifications')
-                if (element) {
-                  window.scrollTo({
-                    top: element.offsetTop - 80,
-                    behavior: 'smooth',
-                  })
-                }
-              }}
-            >
-              Certifications &gt;
-            </a>
-          </span>
+          <div className='header-menu-section'>
+            <span className='header-menu-item menu-btn'>
+              <a
+                href='/#'
+                onClick={(event) => {
+                  event.preventDefault()
+                  const element = document.getElementById('home')
+                  if (element) {
+                    window.scrollTo({
+                      top: element.offsetTop - 80,
+                      behavior: 'smooth',
+                    })
+                  }
+                }}
+              >
+                Home &gt;
+              </a>
+            </span>
+            <span className='header-menu-item menu-btn'>
+              <a
+                href='/#'
+                onClick={(event) => {
+                  event.preventDefault()
+                  const element = document.getElementById('experience')
+                  if (element) {
+                    window.scrollTo({
+                      top: element.offsetTop - 80,
+                      behavior: 'smooth',
+                    })
+                  }
+                }}
+              >
+                Experience &gt;{' '}
+              </a>
+            </span>
+          </div>
+          <div className='header-menu-section'>
+            <span className='header-menu-item menu-btn'>
+              <a
+                href='/#'
+                onClick={(event) => {
+                  event.preventDefault()
+                  const element = document.getElementById('projects')
+                  if (element) {
+                    window.scrollTo({
+                      top: element.offsetTop - 80,
+                      behavior: 'smooth',
+                    })
+                  }
+                }}
+              >
+                My projects &gt;
+              </a>
+            </span>
+            <span className='header-menu-item menu-btn'>
+              <a
+                href='/#'
+                onClick={(event) => {
+                  event.preventDefault()
+                  const element = document.getElementById('technologies')
+                  if (element) {
+                    window.scrollTo({
+                      top: element.offsetTop - 80,
+                      behavior: 'smooth',
+                    })
+                  }
+                }}
+              >
+                Technologies &gt;
+              </a>
+            </span>
+          </div>
+          <div className='header-menu-section'>
+            <span className='header-menu-item menu-btn'>
+              <a
+                href='/#'
+                onClick={(event) => {
+                  event.preventDefault()
+                  const element = document.getElementById('certifications')
+                  if (element) {
+                    window.scrollTo({
+                      top: element.offsetTop - 80,
+                      behavior: 'smooth',
+                    })
+                  }
+                }}
+              >
+                Certifications &gt;
+              </a>
+            </span>
+          </div>
         </div>
       </header>
     </div>
