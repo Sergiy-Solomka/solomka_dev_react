@@ -18,8 +18,8 @@ const Projects = () => {
               <div className='card-wrapper'>
                 <div className='card-banner-image booking-img'></div>
                 <p className='block-project-text'>
-                  Restaurant Bookings App. REACT, REACT-ROUTER, AXIOS, TYPESCRIPT,SASS,MATERIAL
-                  DESIGN, BOOTSTRAP 5, NODEJS, EXPRESS, MONGODB.
+                  Restaurant Bookings App. REACT, TYPESCRIPT,SASS, BOOTSTRAP 5, NODEJS, EXPRESS,
+                  MONGODB.
                 </p>
               </div>
               <div className='card-button-wrapper'>
