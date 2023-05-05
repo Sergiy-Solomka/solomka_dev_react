@@ -1,5 +1,0 @@
-To start SASS
-npm run sass
-to start server
-PORT=4000 HOST=localhost node server.js
-
